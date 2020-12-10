@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>BookList</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        #seletedBook {
+            display: none;
+        }
+        
+        #add {
+            margin-left: 51%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Book</th>
+                <th>Details</th>
+                <th>Checked List</th>
+            </tr>
+            <tr>
+                <td id="t1">Harry Potter and the Philosopher’s Stone</td>
+                <td id="d1">Harry Potter is a series of seven fantasy novels written by British author J. K. Rowling.</td>
+                <td><input type="checkbox" id="c1" name="Book" value="Harry Potter and the Philosopher’s Stone"></td>
+            </tr>
+            <tr>
+                <td id="t2">Lord of the Rings</td>
+                <td id="d2">The Lord of the Rings is an epic high-fantasy book by the English author and scholar J. R. R. Tolkien, set in Middle-earth, the world at some distant time in the past. </td>
+                <td><input type="checkbox" id="c2" name="Book" value="Lord of the Rings"></td>
+            </tr>
+            <tr>
+                <td id="t3">To Kill a Mockingbird</td>
+                <td id="d3">A timeless classic explores human behaviour and the collective conscience of The Deep South in the early 20th century.</td>
+                <td><input type="checkbox" id="c3" name="Book" value="To Kill a Mockingbird"></td>
+            </tr>
+            <tr>
+                <td id="t4">The Book Thief</td>
+                <td id="d4">It follows Liesel as she rescues books from the tyranny of Nazi rule.</td>
+                <td><input id="c4" type="checkbox" name="Book" value="The Book Thief"></td>
+            </tr>
+            <tr>
+                <td id="t5">The Diary Of A Young Girl</td>
+                <td id="d5">Unforgettable and deeply influential, Anne Frank’s diary is a raw account of a young girl’s life as she hides from the Nazis.</td>
+                <td><input id="c5" type="checkbox" name="Book" value="The Diary Of A Young Girl"></td>
+            </tr>
+            <tr>
+                <td id="t6">The Alchemist</td>
+                <td id="d6">The constant theme in The Alchemist is to pursue your dreams by following what it desires.</td>
+                <td><input id="c6" type="checkbox" name="Book" value="The Alchemist"></td>
+            </tr>
+
+        </table>
+
+        <div id="result"></div>
+        <button type="button">Get Values</button>
+    </form>
+
+    <script type="text/javascript" src="library.js"></script>
+</body>
+
+</html>
